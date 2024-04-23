@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="body">
+            <table class="table">
+                <tr">
+                    <h2 style="margin-left: 65px;">CALCULATOR</h2>
+                    <td colspan="4"><input type="text" id="screen"></td>
+                    </tr>
+
+                    <tr class="space">
+                        <td><input class="btn" type="button" value="(" onclick="dis(value)" /> </td>
+                        <td><input class="btn" type="button" value=")" onclick="dis(value)" /> </td>
+                        <td><input class="btn" id="operators" type="button" value="%" onclick="operators(value)" />
+                        </td>
+                        <td><input class="btn space" type="button" value="AC" onclick="clearDisplay()" /> </td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="btn" type="button" value="7" onclick="dis(value)" /> </td>
+                        <td><input class="btn" type="button" value="8" onclick="dis(value)" /> </td>
+                        <td><input class="btn" type="button" value="9" onclick="dis(value)" /> </td>
+                        <td><input class="btn" id="operators" type="button" value="/" onclick="operators(value)" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="btn" type="button" value="4" onclick="dis(value)" /> </td>
+                        <td><input class="btn" type="button" value="5" onclick="dis(value)" /> </td>
+                        <td><input class="btn" type="button" value="6" onclick="dis(value)" /> </td>
+                        <td><input class="btn" id="operators" type="button" value="*" onclick="operators(value)" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="btn" type="button" value="1" onclick="dis(value)" /> </td>
+                        <td><input class="btn" type="button" value="2" onclick="dis(value)" /> </td>
+                        <td><input class="btn" type="button" value="3" onclick="dis(value)" /> </td>
+                        <td><input class="btn" id="operators" type="button" value="-" onclick="operators(value)" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="btn" type="button" value="0" onclick="dis(value)" /> </td>
+                        <td><input class="btn" type="button" value="." onclick="dis(value)" /> </td>
+                        <td>
+                            <input class="btn" type="button" value="=" onclick="equalto(value)"
+                                style="color: rgb(244, 7, 212);" />
+                        </td>
+                        <td><input class="btn" type="button" value="+" onclick="operators(value)" />
+                        </td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
